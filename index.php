@@ -97,9 +97,11 @@ if(isset($login_url) && !isset($_SESSION['data'])){
 }
 else{
 	// get the data stored from the session
+	
 	$data = $_SESSION['data'];
 	// print "<pre>";
 	// print_r($data);
+	
 	  include("show_feed.php");
 	
 	
