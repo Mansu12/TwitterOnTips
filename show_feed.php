@@ -19,7 +19,8 @@
 		  <td>
 		  <ul>
 		  	<img src="<?php echo $value->user->profile_image_url ?>">
-		  	<a href="<?php echo $value->user->url;?>"><?php echo $value->user->name;?></a>
+		  	<a href="<?php echo "https://twitter.com/".$value->user->screen_name;?>"><?php echo ($value->user->name);?></a>
+		  	<?php print_r(" @".$value->user->screen_name);?>
 		  </ul>
 		  <ul>
 		  	<?php 
