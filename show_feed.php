@@ -6,9 +6,10 @@
 	
 	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet"  href="css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a href='?logout=true' class="logout"><button>Logout</button></a>
 	<table class="table">
 	  <?php 
 	  foreach ($data as $key => $value) { ?>
@@ -22,7 +23,7 @@
 		  </ul>
 		  
 		  <ul>
-		  	<img src="<?php echo $value->extended_entities->media[0]->media_url;?>" height="<?php echo $value->extended_entities->media[0]->sizes->medium->h;?>" width="<?php echo $value->extended_entities->media[0]->sizes->medium->w;?>">
+		  	<img src="<?php echo $value->extended_entities->media[0]->media_url;?>" height="<?php echo $value->extended_entities->media[0]->sizes->small->h;?>" width="<?php echo $value->extended_entities->media[0]->sizes->small->w;?>">
 		  	</ul>
 		  </td>
 	  </tr>
@@ -32,10 +33,3 @@
 	</table>
 </body>
 </html>
-<style type="text/css">
-	img {
-   max-width:100%;
-   height:auto;
-   max-height:100%;
-}
-</style>
